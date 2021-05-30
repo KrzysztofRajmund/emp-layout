@@ -1,0 +1,101 @@
+@import url("https://use.typekit.net/ywa6rkc.css");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.intro {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.introCard {
+  height: 60vh;
+}
+
+.introCard h1 {
+  color: #0e0e0e;
+  font-size: 5.6rem;
+  font-weight: 700;
+  font-family: "all-round-gothic";
+}
+
+.introCard p {
+  color: #4a4764;
+  font-size: 1.6rem;
+  font-family: "Comfortaa", cursive;
+}
+
+.introCard button {
+  font-size: 1.6rem;
+  margin: 0.5rem;
+}
+
+.introCard:first-child {
+  text-align: left;
+}
+
+.introCard:last-child {
+  text-align: right;
+}
+
+.introCard:last-child img:first-of-type {
+  height: 100%;
+  width: auto;
+}
+
+.introCard:last-child img:last-of-type {
+  position: absolute;
+  top: 12%;
+  right: 15%;
+  height: 45vh;
+}
+
+.profit {
+  background-color: lightblue;
+}
+
+header {
+  background-color: lightgray;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  padding: 0 25.6rem;
+}
+
+footer {
+  background-color: red;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  padding: 0 25.6rem;
+}
+
+.gridContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  grid-row-gap: 12rem;
+}
+
+.gridContainer > section {
+  padding: 0 25.6rem;
+}
+/*# sourceMappingURL=main.css.map */
