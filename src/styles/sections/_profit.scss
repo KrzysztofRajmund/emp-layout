@@ -14,10 +14,9 @@
   align-items: center;
   text-align: center;
 
-  h1 {
+  h2 {
     @include headingSecond;
     width: 95%;
-    margin-bottom: 0.8rem;
   }
   p {
     @include paragraphNormal;

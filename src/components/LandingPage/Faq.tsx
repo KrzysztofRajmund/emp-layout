@@ -20,11 +20,11 @@ const Faq: React.FC = () => {
         <section className="faq">
 
             <article className="faqCard">
-                <h1>Konsultacje z lekarzem on-line</h1>
+                <h3>Najczęściej zadawane pytania</h3>
                 <Button color="primary" variant="outlined">
-                    Jak to działa?
+                    Sprawdź całe FAQ
                     </Button>
-
+                <div className="faqCardImage"></div>
             </article>
             <article className="faqCard">
                 Article 2

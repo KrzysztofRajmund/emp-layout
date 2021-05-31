@@ -24,7 +24,7 @@ const Intro: React.FC = () => {
         <section className="intro">
 
             <article className="introCard">
-                <h1>Konsultacje z lekarzem on-line</h1>
+                <h2>Konsultacje z lekarzem on-line</h2>
                 <p>
                     Jeżeli potrzebujesz pomocy związanej ze skórą, włosami, paznokciami lub natury intymnej, jesteś we właściwym miejscu. Dzięki naszej pomocy zadbasz o zdrowie i piękno swego ciała.
                 </p>

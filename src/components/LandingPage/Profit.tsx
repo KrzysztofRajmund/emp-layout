@@ -6,8 +6,8 @@ const Profit: React.FC = () => {
         <>
             <section className="profit">
                 <article className="profitCard">
-                    <h1>Skorzystaj z najszybciej<br />
-                     rozwijającej się gałęzi medycyny.</h1>
+                    <h2>Skorzystaj z najszybciej<br />
+                     rozwijającej się gałęzi medycyny.</h2>
                     <p>
                         Teleporada lekarska na naszym serwisie oznacza potwierdzoną skuteczność<br />
                         terapeutyczną, oszczędność czasu i pieniędzy.

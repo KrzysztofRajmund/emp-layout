@@ -1,9 +1,23 @@
-@mixin headingSecond {
+//heading
+@mixin heading {
   color: $titleColor;
-  font-size: 5.6rem;
-  font-weight: 700;
   font-family: $familyFontsSecondary;
 }
+
+@mixin headingSecond {
+  @include heading;
+  font-size: 5.6rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+//sf ns display font ??? no fonts were supplied in assets
+@mixin headingThird {
+  @include heading;
+  font-size: 4rem;
+}
+
+//paragraph
 @mixin paragraphNormal {
   color: $paragraphColor;
   font-size: 1.6rem;
