@@ -14,13 +14,11 @@ const theme = createMuiTheme({
         },
     },
 });
-
 theme.props = {
     MuiButton: { // `MuiButton` is the global class name for the <Button /> component
         disableElevation: true, // this prop disables the drop shadow on all Buttons
     },
-};
-
+}
 theme.overrides = {
     //button
     MuiButton: {
@@ -50,5 +48,4 @@ const LandingPage: React.FC = () => {
         </div>
     )
 }
-
 export default LandingPage

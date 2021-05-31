@@ -1,3 +1,26 @@
 .profit {
-  background-color: lightblue;
+  display: grid;
+  height: 100vh;
+  background-image: url('../assets/section-profit--background.svg');
+  background-size: contain;
+  background-position: 35%;
+  background-repeat: no-repeat;
+}
+
+.profitCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h1 {
+    @include title;
+    width: 95%;
+    margin-bottom: 0.8rem;
+  }
+  p {
+    @include paragraph;
+    width: 70%;
+  }
 }

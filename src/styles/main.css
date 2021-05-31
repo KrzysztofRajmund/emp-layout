@@ -66,7 +66,46 @@ body {
 }
 
 .profit {
-  background-color: lightblue;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  background-image: url("../assets/section-profit--background.svg");
+  background-size: contain;
+  background-position: 35%;
+  background-repeat: no-repeat;
+}
+
+.profitCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.profitCard h1 {
+  color: #0e0e0e;
+  font-size: 5.6rem;
+  font-weight: 700;
+  font-family: "all-round-gothic";
+  width: 95%;
+  margin-bottom: 0.8rem;
+}
+
+.profitCard p {
+  color: #4a4764;
+  font-size: 1.6rem;
+  font-family: "Comfortaa", cursive;
+  width: 70%;
 }
 
 header {
