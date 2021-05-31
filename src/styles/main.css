@@ -117,6 +117,17 @@ hr {
   width: 70%;
 }
 
+.faq {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.faqCard {
+  height: 100vh;
+}
+
 header {
   background-color: lightgray;
   display: -ms-grid;

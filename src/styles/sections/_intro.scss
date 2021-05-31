@@ -6,10 +6,10 @@
 .introCard {
   height: 60vh;
   h1 {
-    @include title;
+    @include headingSecond;
   }
   p {
-    @include paragraph;
+    @include paragraphNormal;
   }
 
   button {

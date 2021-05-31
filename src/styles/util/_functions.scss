@@ -1,10 +1,10 @@
-@mixin title {
+@mixin headingSecond {
   color: $titleColor;
   font-size: 5.6rem;
   font-weight: 700;
   font-family: $familyFontsSecondary;
 }
-@mixin paragraph {
+@mixin paragraphNormal {
   color: $paragraphColor;
   font-size: 1.6rem;
   font-family: $familyFontsPrimary;

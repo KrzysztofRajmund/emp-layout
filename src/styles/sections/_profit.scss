@@ -15,12 +15,12 @@
   text-align: center;
 
   h1 {
-    @include title;
+    @include headingSecond;
     width: 95%;
     margin-bottom: 0.8rem;
   }
   p {
-    @include paragraph;
+    @include paragraphNormal;
     width: 70%;
   }
 }

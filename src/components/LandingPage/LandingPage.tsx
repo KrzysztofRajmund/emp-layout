@@ -2,6 +2,7 @@ import React from 'react';
 //components
 import Intro from "./Intro";
 import Profit from "./Profit";
+import Faq from "./Faq";
 //material ui
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
@@ -44,6 +45,7 @@ const LandingPage: React.FC = () => {
             <ThemeProvider theme={theme}>
                 <Intro />
                 <Profit />
+                <Faq />
             </ThemeProvider>
         </div>
     )
