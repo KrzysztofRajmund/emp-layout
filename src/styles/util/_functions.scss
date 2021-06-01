@@ -22,4 +22,12 @@
   color: $paragraphColor;
   font-size: 1.6rem;
   font-family: $familyFontsPrimary;
+  line-height: 2.8rem;
+}
+
+//title
+@mixin title {
+  font-size: 1.8rem;
+  font-family: $familyFontsPrimary;
+  line-height: 2.8rem;
 }

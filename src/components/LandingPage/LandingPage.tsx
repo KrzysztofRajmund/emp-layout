@@ -24,7 +24,7 @@ theme.overrides = {
     //button
     MuiButton: {
         root: {
-            padding: "1.2rem 2rem",
+            padding: "1.2rem 1.5rem",
             fontWeight: 600,
             borderRadius: "4px",
             textTransform: 'none', // removes uppercase transformation as it si default of material UI
@@ -32,7 +32,7 @@ theme.overrides = {
         },
         outlinedPrimary: {
             border: "2px solid #4432ff",
-            padding: "1.2rem 2rem",
+            padding: "1.2rem 1.5rem",
             '&:hover': {
                 backgroundColor: "#eee",
                 border: "2px solid #4432ff",
