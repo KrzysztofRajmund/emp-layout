@@ -208,6 +208,37 @@ hr {
   background-color: #fff;
 }
 
+.opinions {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: #f4f7f9;
+}
+
+.opinions h3 {
+  color: #0e0e0e;
+  font-family: "all-round-gothic";
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.opinions .opinionsSlider .opinionsItem {
+  height: 50vh;
+}
+
 header {
   background-color: lightgray;
   display: -ms-grid;
