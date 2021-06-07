@@ -1,0 +1,52 @@
+{
+    "opinions": [
+        {
+            "id": 1,
+            "stars": 5,
+            "name": "Maria",
+            "date": "10 lipca 2021",
+            "desc": "Polecam Pana dr. Wysłuchał wszystkiego i dokładnie wytłumaczył następny zadowolony pacjet. E-konsultacja to bardzo dobra forma wizyty gdy musimy zostać w…",
+            "avatar": "https://picsum.photos/id/237/200/300"
+        },
+        {
+            "id": 2,
+            "stars": 2,
+            "name": "Thomas",
+            "date": "20 czerwiec 2019",
+            "desc": "Polecam Pana dr. Wysłuchał wszystkiego i dokładnie wytłumaczył następny zadowolony pacjet. E-konsultacja to bardzo dobra forma wizyty gdy musimy zostać w…",
+            "avatar": "https://picsum.photos/id/240/200/300"
+        },
+        {
+            "id": 3,
+            "stars": 4,
+            "name": "Kate",
+            "date": "13 sierpień 2020",
+            "desc": "Polecam Pana dr. Wysłuchał wszystkiego i dokładnie wytłumaczył następny zadowolony pacjet. E-konsultacja to bardzo dobra forma wizyty gdy musimy zostać w…",
+            "avatar": "https://picsum.photos/id/250/200/300"
+        },
+        {
+            "id": 4,
+            "stars": 5,
+            "name": "Kris",
+            "date": "10 lipca 2021",
+            "desc": "Polecam Pana dr. Wysłuchał wszystkiego i dokładnie wytłumaczył następny zadowolony pacjet. E-konsultacja to bardzo dobra forma wizyty gdy musimy zostać w…",
+            "avatar": "https://picsum.photos/id/310/200/300"
+        },
+        {
+            "id": 5,
+            "stars": 4,
+            "name": "Julia",
+            "date": "20 czerwiec 2019",
+            "desc": "Polecam Pana dr. Wysłuchał wszystkiego i dokładnie wytłumaczył następny zadowolony pacjet. E-konsultacja to bardzo dobra forma wizyty gdy musimy zostać w…",
+            "avatar": "https://picsum.photos/id/457/200/300"
+        },
+        {
+            "id": 6,
+            "stars": 4,
+            "name": "Doug",
+            "date": "10 lipca 2021",
+            "desc": "Polecam Pana dr. Wysłuchał wszystkiego i dokładnie wytłumaczył następny zadowolony pacjet. E-konsultacja to bardzo dobra forma wizyty gdy musimy zostać w…",
+            "avatar": "https://picsum.photos/id/837/200/300"
+        }
+    ]
+}

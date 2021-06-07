@@ -1,19 +1,76 @@
 .opinions {
+  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   text-align: center;
   background-color: #f4f7f9;
+  overflow: hidden;
   h3 {
     @include headingThird;
-    margin-bottom: 3rem;
+    text-align: center;
+    margin-bottom: 5.5rem;
+  }
+
+  p {
+    @include paragraphNormal;
+    text-align: left;
+  }
+
+  span {
+    @include paragraphNormal;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-left: 1.2rem;
   }
   .opinionsSlider {
+    transform: translateX(-39rem);
+    transition: all 0.5s ease-in-out;
+    width: 1000%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
     .opinionsItem {
-      height: 50vh;
+      background: linear-gradient(
+        90deg,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0.88) 32.78%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      // background: linear-gradient(
+      //   270deg,
+      //   #ffffff 0%,
+      //   rgba(255, 255, 255, 0.88) 32.78%,
+      //   rgba(255, 255, 255, 0) 100%
+      // );
+    }
+  }
+
+  .opinionsIndicator {
+    z-index: 95;
+    padding: 0;
+    position: absolute;
+    display: inline-flex;
+    bottom: 6.5%;
+    left: 50vw;
+    transform: translateX(-50%);
+    list-style-type: none;
+    li {
+      height: 1rem;
+      width: 1rem;
+      opacity: 0.08;
+      background-color: #0e0e0e;
+      border-radius: 50%;
+      margin: 0 0.4rem;
+    }
+    .active {
+      background-color: $supplementaryColor;
+      height: 1rem;
+      width: 2rem;
+      border-radius: 5px;
+      opacity: 1;
     }
   }
 }

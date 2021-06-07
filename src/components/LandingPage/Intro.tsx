@@ -4,22 +4,10 @@ import picMobile from "../../assets/illustration-hero--phone.png";
 import picHero from "../../assets/illustration-hero--desktop.png";
 //material ui
 import Brightness1OutlinedIcon from '@material-ui/icons/Brightness1Outlined';
-import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        root: {
-            '& > *': {
-                margin: theme.spacing(1),
-
-            },
-        },
-
-    }),
-);
 const Intro: React.FC = () => {
-    const classes = useStyles();
+
     return (
         <section className="intro">
 

@@ -1,7 +1,5 @@
 import React from 'react';
-
 const Profit: React.FC = () => {
-
     return (
         <>
             <section className="profit">
@@ -18,5 +16,4 @@ const Profit: React.FC = () => {
         </>
     )
 }
-
 export default Profit;

@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
-//clsx
-import clsx from 'clsx';
 //material ui
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
-import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { idText } from 'typescript';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({

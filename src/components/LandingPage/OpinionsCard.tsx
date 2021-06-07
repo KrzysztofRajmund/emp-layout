@@ -1,21 +1,30 @@
 import React, { useState } from 'react';
+//material-ui
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Avatar from '@material-ui/core/Avatar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import GradeIcon from '@material-ui/icons/Grade';
+
+
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         root: {
-            maxWidth: 345,
+            backgroundColor: "transparent",
+            // background: 'linear-gradient(270deg, #FFFFF 0%, #ffffffe0 32.78%, #ffffff00 100%)',
+            // background: 'linear-gradient(270deg, #ffffffe0 30%, #ffffff00 0%)',
+            width: "43.2rem",
+            height: "39.6rem",
+            padding: "3.5rem 3rem",
+            margin: "0 1.4rem",
+            borderRadius: "0.5rem",
+            boxShadow: "none",
+            border: "1px solid #ECECEC",
+            boxSizing: "border-box",
+            cursor: "context-menu",
             "& .MuiSvgIcon-root": {
                 margin: "0.1rem",
             },
@@ -25,49 +34,101 @@ const useStyles = makeStyles((theme: Theme) =>
             justifyContent: "space-between"
 
         },
-        stars: {
+        starsIcon: {
             backgroundColor: "#14CAFF",
             color: "#fff",
             fontSize: "2rem",
             borderRadius: "0.125rem",
             padding: "0.25rem",
         },
-        date: {
+        dateFont: {
             textAlign: "right",
+            fontSize: "1.4rem",
+            color: "#0E0E0E",
+            opacity: 0.32,
         },
-        avatar: {
+        content: {
+            padding: "1.2rem 1rem 0rem 1rem",
+        },
+
+        footer: {
+            width: "40%",
+            padding: "5rem 3rem 0rem 3rem",
+            marginLeft: "-1.7rem",
+            cursor: "pointer",
+        },
+
+        avatarImage: {
+            height: "4.5rem",
+            width: "4.5rem",
+            transition: "all 0.3s ease-in-out",
+        },
+        avatarEye: {
             height: "4rem",
             width: "4rem",
             backgroundColor: "#4432FF",
+            transition: "all 0.3s ease-in-out",
         },
+
+        eye: {
+            width: "2.2rem",
+            height: "2.2rem",
+        },
+
     }),
 );
 
-export default function OpinionsCard() {
+
+interface Props {
+    id?: number,
+    stars: number,
+    name: string,
+    date: string,
+    desc: string,
+    avatar: string
+}
+
+const OpinionsCard: React.FC<Props> = ({ stars, name, date, desc, avatar }) => {
     const classes = useStyles();
 
+    const [hoverImage, setHoverImage] = useState<boolean>(false);
+
+    const hoverHandler = (): void => {
+        setHoverImage(true);
+    }
+    const hoverLeaveHandler = (): void => {
+        setHoverImage(false);
+    }
+    let starsArray = new Array(stars);
     return (
-        <Card className={classes.root}>
+        <Card className={`${classes.root} `}>
             <CardActions className={classes.header} >
                 <div>
-                    <GradeIcon className={classes.stars} />
-                    <GradeIcon className={classes.stars} />
-                    <GradeIcon className={classes.stars} />
-                    <GradeIcon className={classes.stars} />
-                    <GradeIcon className={classes.stars} />
+                    {
+                        [...starsArray].map((e, i) => <GradeIcon className={classes.starsIcon} key={i} />)
+                    }
+
                 </div>
-                <span className={classes.date}>10 lipca 2020</span>
+                <span className={classes.dateFont}>{date}</span>
             </CardActions>
-            <CardContent>
-                <Typography variant="body2" color="textSecondary" component="p">
-                    Polecam Pana dr. Wysłuchał wszystkiego i dokładnie wytłumaczył następny zadowolony pacjet. E-konsultacja to bardzo dobra forma wizyty gdy musimy zostać w…
-        </Typography>
+            <CardContent className={classes.content}>
+                <p>
+                    {desc}
+                </p>
             </CardContent>
-            <CardActions disableSpacing>
-                <Avatar className={classes.avatar}>
-                    <VisibilityIcon />
-                </Avatar>
+            <CardActions className={classes.footer} disableSpacing onMouseEnter={hoverHandler} onMouseLeave={hoverLeaveHandler}>
+                {
+                    hoverImage ? (<><Avatar className={classes.avatarImage} alt="avatar" src={avatar} />
+                        <span>{name}</span></>
+                    ) : (
+                        <Avatar className={classes.avatarEye} >
+                            <VisibilityIcon className={classes.eye} />
+                        </Avatar>
+                    )
+                }
             </CardActions>
         </Card>
     );
 }
+
+export default OpinionsCard;
