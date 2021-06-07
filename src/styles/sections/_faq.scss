@@ -19,11 +19,11 @@
     }
     .faqCardImage {
       width: 100%;
-      height: 50%;
+      height: 60%;
       margin-top: 2rem;
       margin-left: -10rem;
       background-image: url('../assets/illustration-faq.png');
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
     }
   }

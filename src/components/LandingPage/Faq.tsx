@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 //material ui
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -6,6 +6,9 @@ import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+//AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -15,6 +18,13 @@ const useStyles = makeStyles((theme: Theme) =>
     }),
 );
 const Faq: React.FC = () => {
+    useEffect(() => {
+        AOS.init({
+            offset: 300,
+            duration: 900,
+        });
+    }, []);
+
     const classes = useStyles();
     const [activeFirst, setActiveFirst] = useState<boolean>(false);
     const [activeSecond, setActiveSecond] = useState<boolean>(false);
@@ -42,7 +52,7 @@ const Faq: React.FC = () => {
 
     return (
         <section className="faq">
-            <article className="faqCard">
+            <article className="faqCard" data-aos="fade-right">
                 <h3>Najczęściej zadawane pytania</h3>
                 <Button color="primary" variant="outlined">
                     Sprawdź całe FAQ
@@ -50,7 +60,7 @@ const Faq: React.FC = () => {
                 <div className="faqCardImage">
                 </div>
             </article>
-            <article className={`${classes.root} faqCard`}>
+            <article className={`${classes.root} faqCard`} data-aos="fade-left">
                 <Accordion className={activeFirst ? "accord activeFirst" : "accord"}>
                     <AccordionSummary
                         onClick={() => activeHandler("activeFirst")}

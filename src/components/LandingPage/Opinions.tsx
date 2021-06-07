@@ -3,6 +3,10 @@ import React, { useRef, useEffect } from 'react';
 import OpinionsCard from "./OpinionsCard";
 //data
 import data from "../../opinionsData.json";
+//AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Opinions: React.FC = () => {
     let indicatorArray = new Array(data.opinions.length);
     const refElement: any = useRef(null);
@@ -11,6 +15,10 @@ const Opinions: React.FC = () => {
     useEffect(() => {
         let listDefaultActive = document.getElementsByClassName("listIndicator")[1];
         listDefaultActive.classList.add("active");
+        AOS.init({
+            offset: 400,
+            duration: 900,
+        });
     }, [])
 
     const indicatorHandler = (e: any, i: any) => {
@@ -43,10 +51,10 @@ const Opinions: React.FC = () => {
     }
     return (
         <div className="opinions">
-            <article >
+            <article data-aos="fade-up">
                 <h3>Co mówią zadowoleni klienci</h3>
             </article>
-            <section id="opinionsSlider" ref={refElement} className="opinionsSlider">
+            <section id="opinionsSlider" ref={refElement} className="opinionsSlider" data-aos="fade-right">
                 {data.opinions.map((opinion) => {
                     return (
                         <div className="opinionsItem" key={opinion.id}>
