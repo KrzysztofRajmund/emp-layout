@@ -13,9 +13,6 @@ import GradeIcon from '@material-ui/icons/Grade';
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         root: {
-            backgroundColor: "transparent",
-            // background: 'linear-gradient(270deg, #FFFFF 0%, #ffffffe0 32.78%, #ffffff00 100%)',
-            // background: 'linear-gradient(270deg, #ffffffe0 30%, #ffffff00 0%)',
             width: "43.2rem",
             height: "39.6rem",
             padding: "3.5rem 3rem",

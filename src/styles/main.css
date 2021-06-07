@@ -289,11 +289,6 @@ hr {
           justify-content: left;
 }
 
-.opinions .opinionsSlider .opinionsItem {
-  background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(32.78%, rgba(255, 255, 255, 0.88)), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0.88) 32.78%, rgba(255, 255, 255, 0) 100%);
-}
-
 .opinions .opinionsIndicator {
   z-index: 95;
   padding: 0;

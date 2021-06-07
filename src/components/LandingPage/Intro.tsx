@@ -16,8 +16,8 @@ const Intro: React.FC = () => {
     const [loading, setLoading] = useState<boolean>(false);
     useEffect(() => {
         AOS.init({
-            offset: 300,
-            duration: 1500,
+            offset: 100,
+            duration: 1200,
         });
         setLoading(true);
     }, []);
@@ -86,7 +86,7 @@ const Intro: React.FC = () => {
             </article>
             <article className="introCard">
                 <img data-aos="fade-down" src={picHero} alt="hero" />
-                <img data-aos="fade-up-left" src={picMobile} alt="mobile" />
+                <img data-aos="fade-up-left" data-aos-duration='1800' data-aos-offset="-200" src={picMobile} alt="mobile" />
             </article>
 
         </section>
