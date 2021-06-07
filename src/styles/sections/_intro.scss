@@ -1,15 +1,18 @@
 .intro {
   display: grid;
   grid-template-columns: 50% 50%;
+  margin-top: 10rem;
 }
 
 .introCard {
   height: 60vh;
   h2 {
     @include headingSecond;
+    margin-top: 1.5rem;
   }
   p {
     @include paragraphNormal;
+    margin-bottom: 5.6rem;
   }
 
   button {
@@ -18,18 +21,20 @@
   }
   &:first-child {
     text-align: left;
+    width: 75%;
   }
   &:last-child {
+    position: relative;
     text-align: right;
     img:first-of-type {
-      height: 100%;
-      width: auto;
+      height: auto;
+      width: 110%;
     }
 
     img:last-of-type {
       position: absolute;
-      top: 12%;
-      right: 13%;
+      top: 28%;
+      right: -2%;
       height: 45vh;
     }
   }

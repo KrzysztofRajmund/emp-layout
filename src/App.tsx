@@ -7,12 +7,13 @@ import {
 } from "react-router-dom";
 //components
 import LandingPage from './components/LandingPage/LandingPage';
-
+import HeaderComponent from './components/HeaderComponent';
 
 
 const App: React.FC = () => {
   return (
     <Router>
+      <HeaderComponent />
       <Switch>
         <Route path="/">
           <LandingPage />

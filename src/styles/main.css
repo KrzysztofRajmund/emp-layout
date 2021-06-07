@@ -30,6 +30,7 @@ hr {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
+  margin-top: 10rem;
 }
 
 .introCard {
@@ -42,6 +43,7 @@ hr {
   font-size: 5.6rem;
   font-weight: 700;
   margin-bottom: 0.8rem;
+  margin-top: 1.5rem;
 }
 
 .introCard p {
@@ -49,6 +51,7 @@ hr {
   font-size: 1.6rem;
   font-family: "Comfortaa", cursive;
   line-height: 2.8rem;
+  margin-bottom: 5.6rem;
 }
 
 .introCard button {
@@ -58,21 +61,23 @@ hr {
 
 .introCard:first-child {
   text-align: left;
+  width: 75%;
 }
 
 .introCard:last-child {
+  position: relative;
   text-align: right;
 }
 
 .introCard:last-child img:first-of-type {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 110%;
 }
 
 .introCard:last-child img:last-of-type {
   position: absolute;
-  top: 12%;
-  right: 13%;
+  top: 28%;
+  right: -2%;
   height: 45vh;
 }
 
@@ -305,6 +310,15 @@ hr {
   width: 2rem;
   border-radius: 5px;
   opacity: 1;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  padding: 0 25.6rem;
+  height: 12rem;
 }
 
 .gridContainer {

@@ -26,6 +26,7 @@ theme.overrides = {
     MuiButton: {
         root: {
             padding: "1.2rem 1.5rem",
+            border: "2px solid #4432ff",
             fontWeight: 600,
             borderRadius: "4px",
             textTransform: 'none', // removes uppercase transformation as it si default of material UI
