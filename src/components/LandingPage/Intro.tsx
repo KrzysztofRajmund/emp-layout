@@ -44,11 +44,11 @@ const Intro: React.FC = () => {
             delay: (el, i) => 500 + 30 * i,
         });
         //animation-second
-        var textWrapper: any = document.querySelector(
+        var textWrapperSecond: any = document.querySelector(
             '.introAnimationSecond'
         );
         const regexSec = /\S/g;
-        textWrapper.innerHTML = textWrapper.textContent.replace(
+        textWrapperSecond.innerHTML = textWrapperSecond.textContent.replace(
             regexSec,
             "<span class='letter'>$&</span>"
         );
